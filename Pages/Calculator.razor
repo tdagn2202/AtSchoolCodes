@@ -1,0 +1,36 @@
+@page "/compute"
+@inherits BlazorApp1.Pages.CounterBase
+<PageTitle>Computing</PageTitle>
+
+<h1>Counter</h1>
+<div>
+    <div class="col-md-3">
+        <p>First Number</p>
+    </div>
+    <div class="col-md-4">
+        <input placeholder="Enter First Number" @bind="@num1" />
+    </div>
+</div>
+<br />
+<div>
+    <div class="col-md-4">
+        <input placeholder="Enter Second Number" @bind="@num2" />
+    </div>
+</div>
+
+<br/>
+<div>
+    <div class="col-md-4">
+        <input readonly @bind="@result" />
+    </div>
+</div>
+
+<br/>
+
+<Button class = "btn btn-primary" @onclick = "Add">Add (+)</Button>
+<Button class = "btn btn-primary" @onclick = "Subtract">Subtract (-)</Button>
+<Button class = "btn btn-primary" @onclick = "Multiple">Multiple (x)</Button>
+<Button class = "btn btn-primary" @onclick = "Divide">Divide (÷)</Button>
+
+@code {
+}
