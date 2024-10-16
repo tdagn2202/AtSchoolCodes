@@ -1,0 +1,16 @@
+@page "/haidang"
+@rendermode InteractiveServer
+
+<h3>Testing blazor component xyzzzzkkk</h3>
+<p>Counting to: @currentCount2</p>
+<input class="input-group"/>
+<button class="btn btn-outline-danger" @onclick="tang">Click me</button>
+<div class="alert alert-warning" rolt ="alert">@currentCount2</div>
+@code {
+    private int currentCount2 = 1;
+
+    private void tang()
+    {
+        currentCount2++;
+    }
+}

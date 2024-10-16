@@ -1,0 +1,26 @@
+﻿@page "/calc"
+@rendermode InteractiveServer
+@inherits revision01.Components.Pages.CalculatorLogic
+
+<h3>Calculator</h3>
+<PageTitle>Calculator</PageTitle>
+
+
+<div style="margin-top: 10px">
+    <input class="inputModify" placeholder="Enter first number" @bind="num1"/>
+    <br/>
+    <input class="inputModify" placeholder="Enter second number" @bind="num2" />
+    <br/>
+    <label class="form-label">Result: </label>
+    <input style ="width: 200px "class="inputModify" @bind ="@result" disabled="true" />
+    <br/>
+    <button class="btn btn-primary mt-4" @onclick="Add">Add</button>
+    <button class="btn btn-success mt-4" @onclick="Sub">Sub</button>
+    <button class="btn btn-warning mt-4" @onclick="Mul">Mul</button>
+    <button class="btn btn-danger mt-4" @onclick="Div">Div</button>
+    <button class="btn btn-secondary mt-4" @onclick="clear">Clear</button>
+    
+</div>
+@code {
+
+}
