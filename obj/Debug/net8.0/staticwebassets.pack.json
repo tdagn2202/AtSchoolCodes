@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\EmployeeInfo_WorkingON\\EmployeeInfo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EmployeeInfo.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EmployeeInfo.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\EmployeeInfo_WorkingON\\EmployeeInfo\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\EmployeeInfo_WorkingON\\EmployeeInfo\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\EmployeeInfo_WorkingON\\EmployeeInfo\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\EmployeeInfo_WorkingON\\EmployeeInfo\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmployeeInfo.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EmployeeInfo.props",
+      "PackagePath": "build\\EmployeeInfo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeInfo.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeInfo.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EmployeeInfo.props",
+      "PackagePath": "buildTransitive\\EmployeeInfo.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
