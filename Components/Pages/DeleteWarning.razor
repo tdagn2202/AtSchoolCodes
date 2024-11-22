@@ -1,0 +1,10 @@
+@page "/delete/{id}"
+@inherits StaffDeleteBase
+@rendermode InteractiveServer
+
+
+
+<div>
+    <h1>Are your sure deleting this user?</h1>
+    <button class="btn btn-danger" @onclick="deleteEmployee" ><b>DELETE</b></button>
+</div>
