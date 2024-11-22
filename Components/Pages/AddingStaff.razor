@@ -1,0 +1,76 @@
+@page "/addstaff"
+@inherits AddStaffBase
+@rendermode InteractiveServer
+@using BlazorStaff.Components.Pages;
+
+<PageTitle>Adding Employee</PageTitle>
+
+@if (employee == null)
+{
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-header text-center">
+                        <h2>Adding Employee</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter first name"
+                                    @bind="@employee.FirstName">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name"
+                                    @bind="@employee.LastName">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address"
+                                    @bind="@employee.Email">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" 
+                                    @bind="@employee.StartingDate">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="department" class="form-label">Department</label>
+                                <input type="text" class="form-control" id="department" placeholder="Enter department"
+                                    @bind="@employee.DepartmentId">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-control" id="gender" @bind="@employee.GenderId">
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="/stafflist" class="btn btn-outline-secondary btn-sm w-100 mb-2 mb-md-0">Back</a>
+                        <button type="button" class="btn btn-primary w-100" @onclick="AddNewEmployee">
+                            <i class="fas fa-save"></i> Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -26,4 +26,8 @@ public class StaffService : IStaffService {
     public async Task DeleteStaff(Employee employee){
         await httpClient.DeleteAsync($"api/Employee/{employee.EmployeeId}");
     }
+
+    public async Task AddStaff(Employee employee){
+        await httpClient.PostAsJsonAsync("api/Employee", employee);
+    }
 }

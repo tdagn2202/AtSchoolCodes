@@ -5,4 +5,5 @@ public interface IStaffService {
     Task<Employee> GetStaff(int id);
     Task<Employee> UpdateStaff(Employee employee);
     Task DeleteStaff(Employee employee);
+    Task AddStaff(Employee employee);
 }

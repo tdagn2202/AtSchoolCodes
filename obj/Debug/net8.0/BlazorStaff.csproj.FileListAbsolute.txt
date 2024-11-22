@@ -250,3 +250,4 @@ D:\CODE\CSdotNet\CSatSchool\AtSchoolCodes-BlazorMySqlStaffs\obj\Debug\net8.0\ref
 D:\CODE\CSdotNet\CSatSchool\AtSchoolCodes-BlazorMySqlStaffs\obj\Debug\net8.0\BlazorStaff.pdb
 D:\CODE\CSdotNet\CSatSchool\AtSchoolCodes-BlazorMySqlStaffs\obj\Debug\net8.0\BlazorStaff.genruntimeconfig.cache
 D:\CODE\CSdotNet\CSatSchool\AtSchoolCodes-BlazorMySqlStaffs\obj\Debug\net8.0\ref\BlazorStaff.dll
+D:\CODE\CSdotNet\CSatSchool\AtSchoolCodes-BlazorMySqlStaffs\obj\Debug\net8.0\BlazorStaff.sourcelink.json
