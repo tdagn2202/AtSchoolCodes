@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e97481d4539a94b8e70118dc36288ec0514fde0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce1910719908f2f6d6c0c46bc2327bf38a8f66c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
