@@ -64,4 +64,48 @@ public class BookstoreController : ControllerBase {
                 "Error retrieving data from the database");
         }
     }
+
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Bookstore>> UpdateEmployee(int id, Bookstore book)
+    {
+        try
+        {
+            if (id != book.BookNo)
+                return BadRequest("Employee ID mismatch");
+
+            var bookToUpdate = await bookMethods.GetBookById(id);
+
+            if (bookToUpdate == null)
+                return NotFound($"Employee with Id = {id} not found");
+
+            return await bookMethods.UpdateBook(book);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, 
+                "Error updating data");
+        }
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<ActionResult<Bookstore>> DeleteBook(int id)
+    {
+        try
+        {
+            var bookToDelete = await bookMethods.GetBookById(id);
+
+            if (bookToDelete == null)
+            {
+                return NotFound($"Employee with Id = {id} not found");
+            }
+
+            return await bookMethods.DeleteBook(id);
+        }
+        catch (Exception)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, 
+                "Error deleting data");
+        }
+    }
 }

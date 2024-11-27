@@ -120,3 +120,4 @@ D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookService\obj\Debug\net8.0\refint\B
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookService\obj\Debug\net8.0\BookService.pdb
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookService\obj\Debug\net8.0\BookService.genruntimeconfig.cache
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookService\obj\Debug\net8.0\ref\BookService.dll
+D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookService\obj\Debug\net8.0\BookService.sourcelink.json
