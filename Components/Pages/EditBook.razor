@@ -1,0 +1,62 @@
+@page "/editbook/{id}"
+@inherits UpdateBookBase
+@rendermode InteractiveServer
+@using BookUI.Components.Pages;
+
+<PageTitle>Update Book</PageTitle>
+
+@if (book == null)
+{
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <div class="card-header text-center">
+                        <h2>Add New Book</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="bookName" class="form-label">Book Name</label>
+                                <input type="text" class="form-control" id="bookName" placeholder="Enter book name"
+                                    @bind="@book.BookName">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="publisher" class="form-label">Publisher</label>
+                                <input type="text" class="form-control" id="publisher" placeholder="Enter publisher name"
+                                    @bind="@book.Publisher">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" placeholder="Enter quantity"
+                                    @bind="@book.Quantity">
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="unitPrice" class="form-label">Unit Price</label>
+                                <input type="number" class="form-control" id="unitPrice" step="0.01" placeholder="Enter unit price"
+                                    @bind="@book.UnitPrice">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="/booklist" class="btn btn-outline-secondary btn-sm w-100 mb-2 mb-md-0">Back</a>
+                        <button type="button" class="btn btn-primary w-100" @onclick="UpdateBook">
+                            <i class="fas fa-save"></i> Update
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

@@ -118,3 +118,4 @@ D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookUI\bin\Debug\net8.0\runtimes\win-
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookUI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookUI\obj\Debug\net8.0\BookUI.csproj.AssemblyReference.cache
 D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookUI\obj\Debug\net8.0\BookUI.csproj.Up2Date
+D:\CODE\CSdotNet\CSatSchool\finalExamReves\BookUI\obj\Debug\net8.0\BookUI.sourcelink.json

@@ -18,4 +18,14 @@ public class BookRepository : IBookRepository {
     public async Task AddBook(Bookstore book) {
         await httpClient.PostAsJsonAsync("/api/Bookstore", book);
     }
+
+    public async Task<Bookstore> UpdateBook(Bookstore book) {
+        var res = await httpClient.PutAsJsonAsync($"/api/Bookstore/{book.BookNo}", book);
+        res.EnsureSuccessStatusCode();
+        return await res.Content.ReadFromJsonAsync<Bookstore>();
+    }
+
+    public async Task DeleteBook(Bookstore book) {
+        await httpClient.DeleteAsync($"/api/Bookstore/{book.BookNo}");
+    }
 }

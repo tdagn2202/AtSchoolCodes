@@ -1,0 +1,8 @@
+@page "/delete/{id}"
+@inherits DeleteBookBase
+@rendermode InteractiveServer
+
+<div>
+    <h1>Are your sure deleting this book?</h1>
+    <button class="btn btn-danger" @onclick="handleDelete" ><b>DELETE</b></button>
+</div>  

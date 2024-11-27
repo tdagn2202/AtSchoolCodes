@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CODE/CSdotNet/CSatSchool/finalExamReves/BookUI/Components/Pages/DeleteWarning.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEZWxldGVXYXJuaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CODE/CSdotNet/CSatSchool/finalExamReves/BookUI/Components/Pages/EditBook.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0Qm9vay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CODE/CSdotNet/CSatSchool/finalExamReves/BookUI/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
